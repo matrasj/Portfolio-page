@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script:wght@500&family=Inter:wght@200;300;400&family=Montserrat:wght@200;300&family=Open+Sans&family=Oswald:wght@200;500&family=Playfair+Display&family=Roboto+Mono:ital,wght@1,200;1,400&family=Rubik:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: #f3f3f3;
+}
+
+html {
+  font-size: 10px;
+}
+
+.btn {
+  background: transparent;
+  border: solid #f3f3f3 1px;
+  color: #f3f3f3;
+  padding: 0.8rem 2.8rem;
+  border-radius: 2rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f3f3f3;
+  border: solid 1px #f3f3f3;
+  color: #495057;
+  transition: all 0.2s linear;
+}
+
+.contact-con {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 50%;
+  gap: 2.4rem;
+  transform: translateX(-50%);
+}
+
+.contact-icon {
+  width: 3rem;
+}
+/* M E N U */
+.nav-icon {
+  width: 4rem;
+  stroke: #bdb4b4;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.icon-link {
+}
+
+.nav-icon:hover {
+  background-color: #bdb4b4;
+  stroke: #495057;
+  transition: all 0.2s linear;
+}
+
+#navigation {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 1.2rem;
+  padding: 0.6rem 2.8rem;
+  z-index: 2;
+}
+
+h1 {
+  color: #f3f3f3;
+  font-size: 2.8rem;
+}
+/* H E R O */
+.section-element {
+  height: 100vh;
+  background-color: #495057;
+  border-bottom: solid #f3f3f3 1px;
+}
+
+#header {
+  padding: 4.2rem 1rem;
+}
+
+.hero-img {
+  width: 30rem;
+  margin-bottom: 2.8rem;
+}
+
+.hello-text {
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.user-name {
+  font-size: 4.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.occupation {
+  color: #bdb4b4;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.content {
+  max-width: 50rem;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  align-items: flex-start;
+}
+
+#about h1 {
+}
+
+.technologies-img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+/*  S K I L L S */
+.technology-icon {
+  width: 2.5rem;
+  stroke: #495057;
+}
+
+.skill p {
+  font-size: 1.4rem;
+  color: #495057;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1.4rem;
+}
+
+h2 {
+  color: #495057;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.skills-set {
+  background-color: #bdb4b4;
+  padding: 2.8rem 3.2rem;
+  border-radius: 2rem;
+}
+
+.project-img {
+  height: 15rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-con {
+  padding: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  background-color: #212529;
+  border-radius: 1rem;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.project-desc {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  height: 18rem;
+}
+
+.project-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.8rem;
+  margin-bottom: 1.2rem;
+}
