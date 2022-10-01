@@ -246,12 +246,12 @@ footer {
   width: 100%;
 }
 
-.contact-con:hover {
+.contact-icon:hover {
   transform: scale(1.2);
   transition: all 0.2s linear;
 }
 
-.contact-con {
+.contact-icon {
   transition: all 0.2s linear;
 }
 
