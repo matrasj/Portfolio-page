@@ -132,7 +132,7 @@
           <p class="user-name">Jakub Matras</p>
           <p class="occupation">Fullstack Developer</p>
           <img src="./images/Kuba.png" class="hero-img" />
-          <a href="./files/Jakub_Matras_CV.pdf" download="Jakub_Matras_CV"><button class="btn">Download CV</button></a>
+          <a href="./files/CV.pdf" download="Jakub_Matras_CV"><button class="btn">Download CV</button></a>
         </div>
       </header>
 
@@ -203,6 +203,13 @@
                   </svg>
                   <p>REST</p>
                 </div>
+
+                <div class="skill flex align-center" style="gap: 0.6rem;">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="technology-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                  </svg>
+                  <p>Docker</p>
+                </div>
               </div>
             </div>
 
@@ -255,15 +262,15 @@
       id="portfolio">
       <p class="hello-text">My projects</p>
       <h1 style="margin-bottom: 2.4rem;">Portfolio</h1>
-      <div class="flex justify-center" id="projects-container" style="gap: 3.4rem; align-items: flex-start;">
+      <div class="grid" id="projects-container" style="gap: 3.4rem; align-items: flex-start;">
         <div class="project-con">
-          <img src="./images/reddit.png" class="project-img"/>
+          <img src="./images/etutor.webp" id="etutor-img" class="project-img"/>
          
-          <p class="project-title">#1 Reddit Clone</p>
-          <p class="project-desc">In this project I've implemented basic reddit functionalities like: posting, commenting, liking, profile manipulation etc. Besides that I built REST for my frontend, and practised SPA, routing, pagination and much more in Agnular. I also learnt about different aporaches for images storing, and chose Amazon S3 bucket.</p>
+          <p class="project-title">#1 E-Tutor</p>
+          <p class="project-desc">The main goal of this project was to create a platfrom where people can post advertisements about tutority. As a user you can post advertisement eiher as a person who wants to teach and also that needs help. I've implemented a lot functionalities as filtering, creating reviews etc. Moreover app is fully responsive.</p>
           <p class="project-info">Screentshots are available on github</p>
           
-          <a href="https://github.com/pozerinhooo/Reddit-clone-frontend" target="_blank"><button class="btn">See on github</button></a>
+          <a href="https://github.com/pozerinhooo/E-Tutor-FrontEnd" target="_blank"><button class="btn">See on github</button></a>
         </div>
 
         <div class="project-con">
@@ -282,6 +289,16 @@
           <p class="project-desc">Firstly main goal of this project was to make small application where I could add questions to learn and memorize Java and Angular interview questions, however I decided to impelment more functionalities. In app we have 3 roles: Student, Teacher, Admin and everyone has got different permissons. Project is still being developed and by the way I made my life easier and can do quizzes from Java :D</p>
           <p class="project-info">Screentshots are available on github</p>
           <a href="https://github.com/pozerinhooo/QuizQubFrontend" target="_blank"><button class="btn">See on github</button></a>
+        </div>
+
+        <div class="project-con">
+          <img src="./images/reddit.png" class="project-img"/>
+         
+          <p class="project-title">#4 Reddit Clone</p>
+          <p class="project-desc">In this project I've implemented basic reddit functionalities like: posting, commenting, liking, profile manipulation etc. Besides that I built REST for my frontend, and practised SPA, routing, pagination and much more in Agnular. I also learnt about different aporaches for images storing, and chose Amazon S3 bucket.</p>
+          <p class="project-info">Screentshots are available on github</p>
+          
+          <a href="https://github.com/pozerinhooo/Reddit-clone-frontend" target="_blank"><button class="btn">See on github</button></a>
         </div>
       </div>
     </section>
