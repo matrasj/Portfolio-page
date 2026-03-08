@@ -1,741 +1,877 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Jakub Matras — Full-Stack Developer (Angular + Java/Spring)</title>
+    <title>Jakub Matras — Full-Stack Developer</title>
     <meta
-            name="description"
-            content="Full-Stack Developer focused on Angular + Java/Spring. Experience in banking & healthcare. Integrations (REST/SOAP), messaging (Kafka/RabbitMQ), PostgreSQL, Docker."
+      name="description"
+      content="Full-Stack Developer focused on Angular and Java/Spring. Experience in building healthcare and banking applications."
     />
     <meta name="theme-color" content="#0b1020" />
 
-    <meta property="og:title" content="Jakub Matras — Full-Stack Developer (Angular + Java/Spring)" />
+    <meta property="og:title" content="Jakub Matras — Full-Stack Developer" />
     <meta
-            property="og:description"
-            content="Recruiter-friendly skills overview: Angular + Java/Spring, integrations, messaging, PostgreSQL, Docker. Banking & healthcare experience."
+      property="og:description"
+      content="Software Engineer specializing in Angular, Java/Spring Boot, and system integrations."
     />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
     <script defer src="./script.js"></script>
-</head>
+  </head>
 
-<body>
-<div class="bg">
-    <div class="bg__glow bg__glow--a"></div>
-    <div class="bg__glow bg__glow--b"></div>
-    <div class="bg__grid"></div>
-</div>
+  <body>
+    <div class="bg">
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__grid"></div>
+    </div>
 
-<a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar">
-    <div class="wrap topbar__inner">
+    <header class="topbar">
+      <div class="wrap topbar__inner">
         <a class="brand" href="#top" data-scroll>
-            <span class="brand__dot"></span>
-            <span class="brand__text">Jakub Matras</span>
+          <span class="brand__dot"></span>
+          <span class="brand__text">Jakub Matras</span>
         </a>
 
         <nav class="topnav" aria-label="Primary navigation">
-            <a class="topnav__link" href="#summary" data-scroll>Summary</a>
-            <a class="topnav__link" href="#stack" data-scroll>Stack</a>
-            <a class="topnav__link" href="#skills" data-scroll>Skills</a>
-            <a class="topnav__link" href="#experience" data-scroll>Experience</a>
-            <a class="topnav__link" href="#projects" data-scroll>Projects</a>
-            <a class="topnav__link" href="#contact" data-scroll>Contact</a>
-            <a class="pill pill--ghost" href="./files/CV.pdf" download="Jakub_Matras_CV">CV (PDF)</a>
+          <a class="topnav__link" href="#summary" data-scroll>About</a>
+          <a class="topnav__link" href="#stack" data-scroll>Stack</a>
+          <a class="topnav__link" href="#experience" data-scroll>Experience</a>
+          <a class="topnav__link" href="#education" data-scroll>Education</a>
+          <a class="topnav__link" href="#projects" data-scroll>Projects</a>
+          <a class="topnav__link" href="#contact" data-scroll>Contact</a>
         </nav>
 
-        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" id="burger">
-            <span></span><span></span><span></span>
+        <button
+          class="burger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          id="burger"
+        >
+          <span></span><span></span><span></span>
         </button>
-    </div>
+      </div>
 
-    <div class="mobile" id="mobile" aria-hidden="true">
+      <div class="mobile" id="mobile" aria-hidden="true">
         <div class="mobile__panel">
-            <a class="mobile__link" href="#summary" data-scroll>Summary</a>
-            <a class="mobile__link" href="#stack" data-scroll>Stack</a>
-            <a class="mobile__link" href="#skills" data-scroll>Skills</a>
-            <a class="mobile__link" href="#experience" data-scroll>Experience</a>
-            <a class="mobile__link" href="#projects" data-scroll>Projects</a>
-            <a class="mobile__link" href="#contact" data-scroll>Contact</a>
-            <a class="pill pill--primary mobile__cta" href="./files/CV.pdf" download="Jakub_Matras_CV">CV (PDF)</a>
+          <a class="mobile__link" href="#summary" data-scroll>About</a>
+          <a class="mobile__link" href="#stack" data-scroll>Stack</a>
+          <a class="mobile__link" href="#experience" data-scroll>Experience</a>
+          <a class="mobile__link" href="#education" data-scroll>Education</a>
+          <a class="mobile__link" href="#projects" data-scroll>Projects</a>
+          <a class="mobile__link" href="#contact" data-scroll>Contact</a>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<nav class="dock" aria-label="Section shortcuts">
-    <a class="dock__btn" href="#summary" data-scroll aria-label="Summary">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4V4zm0 8h16v8H4v-8zm2 2v4h12v-4H6z"/></svg>
-    </a>
-    <a class="dock__btn" href="#skills" data-scroll aria-label="Skills">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4l-1.5-1.5L12 11l-1.5-1.5L9 11zM2 12l5 5 2-2-5-5-2 2zm7 7h13v2H9v-2z"/></svg>
-    </a>
-    <a class="dock__btn" href="#experience" data-scroll aria-label="Experience">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3V2zm2 2h6V2H9v2zm-5 6v10h16V10H4zm2 2h6v2H6v-2z"/></svg>
-    </a>
-    <a class="dock__btn" href="#projects" data-scroll aria-label="Projects">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v4H4V4zm0 6h16v10H4V10zm2 2v6h12v-6H6z"/></svg>
-    </a>
-    <a class="dock__btn" href="#contact" data-scroll aria-label="Contact">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
-    </a>
-</nav>
+    <nav class="dock" aria-label="Section shortcuts">
+      <a class="dock__btn" href="#summary" data-scroll aria-label="Summary">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 4h16v6H4V4zm0 8h16v8H4v-8zm2 2v4h12v-4H6z" />
+        </svg>
+      </a>
+      <a class="dock__btn" href="#stack" data-scroll aria-label="Stack">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M9 11l3 3L22 4l-1.5-1.5L12 11l-1.5-1.5L9 11zM2 12l5 5 2-2-5-5-2 2zm7 7h13v2H9v-2z"
+          />
+        </svg>
+      </a>
+      <a
+        class="dock__btn"
+        href="#experience"
+        data-scroll
+        aria-label="Experience"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M7 2h10v2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3V2zm2 2h6V2H9v2zm-5 6v10h16V10H4zm2 2h6v2H6v-2z"
+          />
+        </svg>
+      </a>
+      <a class="dock__btn" href="#projects" data-scroll aria-label="Projects">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 4h16v4H4V4zm0 6h16v10H4V10zm2 2v6h12v-6H6z" />
+        </svg>
+      </a>
+      <a class="dock__btn" href="#contact" data-scroll aria-label="Contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"
+          />
+        </svg>
+      </a>
+    </nav>
 
-<main id="main">
-    <section class="hero" id="top">
+    <main id="main">
+      <section class="hero" id="top">
         <div class="wrap hero__grid">
-            <div class="hero__left">
-                <div class="kicker">
-                    <span class="kicker__chip">Full-Stack Developer</span>
-                    <span class="kicker__chip kicker__chip--muted">Primary: Angular + Java/Spring</span>
-                </div>
-
-                <h1 class="h1">
-                    Skills-first profile
-                    <span class="sub">Angular · Java · Spring Boot · Integrations · SQL · Messaging</span>
-                </h1>
-
-                <p class="lead">
-                    I’m a full-stack developer focused on building and maintaining business web applications.
-                    My strongest stack is Angular + Java/Spring. I also work with integrations (REST/SOAP),
-                    messaging (Kafka/RabbitMQ) and relational databases (PostgreSQL/MySQL).
-                </p>
-
-                <div class="hero__cta">
-                    <a class="pill pill--primary" href="#skills" data-scroll>Jump to skills</a>
-                    <a class="pill pill--ghost" href="./files/CV.pdf" download="Jakub_Matras_CV">Download CV</a>
-                </div>
-
-                <div class="facts">
-                    <div class="fact">
-                        <div class="fact__k">Experience</div>
-                        <div class="fact__v"><span id="expYears">3+</span> years</div>
-                    </div>
-                    <div class="fact">
-                        <div class="fact__k">Domains</div>
-                        <div class="fact__v">Banking · Healthcare</div>
-                    </div>
-                    <div class="fact">
-                        <div class="fact__k">Languages</div>
-                        <div class="fact__v">PL · EN (B2/C1)</div>
-                    </div>
-                </div>
+          <div class="hero__left">
+            <div class="kicker">
+              <span class="kicker__chip">Full-Stack Developer</span>
             </div>
 
-            <div class="hero__right">
-                <div class="card profile reveal">
-                    <div class="profile__top">
-                        <div class="avatar">
-                            <img src="./images/Kuba_profile.jpg" alt="Jakub Matras" />
-                        </div>
-                        <div class="profile__meta">
-                            <div class="profile__name">Jakub Matras</div>
-                            <div class="profile__role">Full-Stack Developer</div>
-                            <div class="profile__focus">Primary: Angular + Java/Spring</div>
-                        </div>
-                    </div>
+            <h1 class="h1">
+              Software Engineer
+              <span class="sub"
+                >Angular · Java · Spring Boot · Integrations</span
+              >
+            </h1>
 
-                    <div class="divider"></div>
+            <p class="lead">
+              I build and maintain web applications from the ground up. My core
+              stack is Angular and Java/Spring Boot. I also spend a lot of time
+              working with system integrations, message brokers, and various
+              databases.
+            </p>
 
-                    <div class="profile__grid">
-                        <div class="mini">
-                            <div class="mini__k">Frontend</div>
-                            <div class="mini__v">Angular · TS · RxJS</div>
-                        </div>
-                        <div class="mini">
-                            <div class="mini__k">Backend</div>
-                            <div class="mini__v">Java · Spring Boot</div>
-                        </div>
-                        <div class="mini">
-                            <div class="mini__k">Data</div>
-                            <div class="mini__v">PostgreSQL · MySQL</div>
-                        </div>
-                        <div class="mini">
-                            <div class="mini__k">Integrations</div>
-                            <div class="mini__v">REST · SOAP · MQ</div>
-                        </div>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div class="profile__actions">
-                        <a class="iconBtn" href="https://github.com/matrasj" target="_blank" rel="noreferrer" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
-                            <span>GitHub</span>
-                        </a>
-                        <a class="iconBtn" href="https://www.linkedin.com/in/jakub-matras-b07684229/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.9 6.7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM5 21V9h3.8v12H5zm6.2-12h3.6v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-3.8v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-3.8V9z"/></svg>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a class="iconBtn" href="./files/CV.pdf" download="Jakub_Matras_CV" aria-label="CV PDF">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-7 4h14v2H5v-2z"/></svg>
-                            <span>CV</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="chipsRow">
-                    <span class="chip">Angular</span>
-                    <span class="chip">Java</span>
-                    <span class="chip">Spring Boot</span>
-                    <span class="chip">PostgreSQL</span>
-                    <span class="chip">Kafka</span>
-                    <span class="chip">Docker</span>
-                    <span class="chip">REST/SOAP</span>
-                </div>
+            <div class="hero__cta">
+              <a class="pill pill--primary" href="#experience" data-scroll
+                >View experience</a
+              >
+              <a class="pill pill--ghost" href="#contact" data-scroll
+                >Contact me</a
+              >
             </div>
+
+            <div class="facts">
+              <div class="fact">
+                <div class="fact__k">Experience</div>
+                <div class="fact__v"><span id="expYears">3+</span> years</div>
+              </div>
+              <div class="fact">
+                <div class="fact__k">Domains</div>
+                <div class="fact__v">Banking · Healthcare</div>
+              </div>
+              <div class="fact">
+                <div class="fact__k">Languages</div>
+                <div class="fact__v">PL · EN (B2/C1)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <div class="card profile reveal">
+              <div class="profile__top">
+                <div class="avatar">
+                  <img src="./images/Kuba_profile.jpg" alt="Jakub Matras" />
+                </div>
+                <div class="profile__meta">
+                  <div class="profile__name">Jakub Matras</div>
+                  <div class="profile__role">Full-Stack Developer</div>
+                  <div class="profile__focus">Lublin, Poland</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="profile__grid">
+                <div class="mini">
+                  <div class="mini__k">Frontend</div>
+                  <div class="mini__v">Angular · TS · RxJS</div>
+                </div>
+                <div class="mini">
+                  <div class="mini__k">Backend</div>
+                  <div class="mini__v">Java · Spring Boot</div>
+                </div>
+                <div class="mini">
+                  <div class="mini__k">Data</div>
+                  <div class="mini__v">SQL · NoSQL</div>
+                </div>
+                <div class="mini">
+                  <div class="mini__k">Integrations</div>
+                  <div class="mini__v">REST · SOAP · Kafka</div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="profile__actions">
+                <a
+                  class="iconBtn"
+                  href="https://github.com/matrasj"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  class="iconBtn"
+                  href="https://www.linkedin.com/in/jakub-matras-b07684229/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M6.9 6.7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM5 21V9h3.8v12H5zm6.2-12h3.6v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-3.8v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-3.8V9z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="chipsRow">
+              <span class="chip">Angular</span>
+              <span class="chip">Java (1.8-25)</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">SQL/NoSQL</span>
+              <span class="chip">Kafka/MQ</span>
+              <span class="chip">Docker</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="section" id="summary">
+      <section class="section" id="summary">
         <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Summary</div>
-                <h2 class="h2">Recruiter-friendly overview</h2>
-                <p class="muted">
-                    Clear focus: Angular + Java/Spring. Comfortable across integrations, databases and deployment tooling.
-                </p>
+          <div class="section__head">
+            <div class="eyebrow">About</div>
+            <h2 class="h2">What I do</h2>
+            <p class="muted">
+              I work primarily as a Full-Stack Developer, dividing my time
+              between backend logic, frontend interfaces, and system
+              integrations.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Backend</div>
+              <div class="cardText">
+                I build microservices and backend logic using Java (1.8 - 25)
+                and Spring Boot. I handle database migrations with Liquibase,
+                use Docker for containerization, and work with both relational
+                (PostgreSQL, MySQL, Oracle) and non-relational databases
+                (Cassandra, MongoDB).
+              </div>
+              <div class="pillRow">
+                <span class="pillSmall">Java</span>
+                <span class="pillSmall">Spring Boot</span>
+                <span class="pillSmall">Microservices</span>
+                <span class="pillSmall">SQL</span>
+                <span class="pillSmall">NoSQL</span>
+              </div>
             </div>
 
-            <div class="grid3">
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Primary stack</div>
-                    <div class="cardText">Angular (TypeScript, RxJS) + Java (Spring Boot, JPA/Hibernate)</div>
-                    <div class="pillRow">
-                        <span class="pillSmall">Angular</span>
-                        <span class="pillSmall">TypeScript</span>
-                        <span class="pillSmall">RxJS</span>
-                        <span class="pillSmall">Java</span>
-                        <span class="pillSmall">Spring Boot</span>
-                    </div>
-                </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Backend & integrations</div>
-                    <div class="cardText">APIs and integrations: REST/SOAP, messaging, reliability, logging & monitoring</div>
-                    <div class="pillRow">
-                        <span class="pillSmall">REST</span>
-                        <span class="pillSmall">SOAP</span>
-                        <span class="pillSmall">Kafka</span>
-                        <span class="pillSmall">RabbitMQ</span>
-                        <span class="pillSmall">Docker</span>
-                    </div>
-                </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Secondary</div>
-                    <div class="cardText">React/Node used in smaller scope; can ramp up quickly if needed</div>
-                    <div class="pillRow">
-                        <span class="pillSmall">React</span>
-                        <span class="pillSmall">Node.js</span>
-                        <span class="pillSmall">MongoDB</span>
-                        <span class="pillSmall">AWS S3</span>
-                    </div>
-                </div>
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Frontend</div>
+              <div class="cardText">
+                I create responsive user interfaces from the ground up. I focus
+                mostly on Angular and TypeScript, managing application state and
+                asynchronous data streams with RxJS. I also have past experience
+                building components in React.
+              </div>
+              <div class="pillRow">
+                <span class="pillSmall">Angular</span>
+                <span class="pillSmall">TypeScript</span>
+                <span class="pillSmall">RxJS</span>
+                <span class="pillSmall">React</span>
+              </div>
             </div>
 
-            <div class="callout reveal">
-                <div class="callout__left">
-                    <div class="callout__t">What you get from me</div>
-                    <div class="callout__p">
-                        A developer who can work end-to-end inside one stack: Angular UI, Spring APIs, SQL, integrations — and keep things maintainable.
-                    </div>
-                </div>
-                <div class="callout__right">
-                    <a class="pill pill--primary" href="#experience" data-scroll>View experience</a>
-                    <a class="pill pill--ghost" href="#contact" data-scroll>Contact</a>
-                </div>
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Integration & Architecture</div>
+              <div class="cardText">
+                I design robust communication between systems. This involves
+                writing clean code, applying design patterns and SOLID
+                principles, designing APIs with Swagger, working with canonical
+                and client models, and implementing messaging protocols like
+                REST, SOAP, MQ, and Kafka.
+              </div>
+              <div class="pillRow">
+                <span class="pillSmall">Clean Code</span>
+                <span class="pillSmall">SOLID</span>
+                <span class="pillSmall">Design Patterns</span>
+                <span class="pillSmall">REST/SOAP</span>
+                <span class="pillSmall">Kafka/MQ</span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="section" id="stack">
+      <section class="section" id="stack">
         <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Stack</div>
-                <h2 class="h2">Technology map</h2>
-                <p class="muted">Primary first, then supporting tools.</p>
+          <div class="section__head">
+            <div class="eyebrow">Stack</div>
+            <h2 class="h2">Tech Stack</h2>
+            <p class="muted">Tools and technologies I use to build software.</p>
+          </div>
+
+          <div class="stackGrid">
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Frontend</div>
+              <div class="list">
+                <div class="li">
+                  <span class="dot"></span><span>Angular 2+ & TypeScript</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span><span>React & JavaScript</span>
+                </div>
+                <div class="li"><span class="dot"></span><span>RxJS</span></div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>HTML, CSS, SCSS, Bootstrap</span>
+                </div>
+              </div>
             </div>
 
-            <div class="stackGrid">
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Frontend (Primary)</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>Angular</span></div>
-                        <div class="li"><span class="dot"></span><span>TypeScript</span></div>
-                        <div class="li"><span class="dot"></span><span>RxJS</span></div>
-                        <div class="li"><span class="dot"></span><span>Forms & validation</span></div>
-                    </div>
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Backend</div>
+              <div class="list">
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>Java (1.8 - 25) & Spring Boot</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Backend (Primary)</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>Java</span></div>
-                        <div class="li"><span class="dot"></span><span>Spring Boot</span></div>
-                        <div class="li"><span class="dot"></span><span>JPA/Hibernate</span></div>
-                        <div class="li"><span class="dot"></span><span>Microservices</span></div>
-                    </div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>Relational DBs (PostgreSQL, MySQL, Oracle)</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Data</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>PostgreSQL</span></div>
-                        <div class="li"><span class="dot"></span><span>MySQL</span></div>
-                        <div class="li"><span class="dot"></span><span>SQL & query optimization</span></div>
-                    </div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>NoSQL DBs (Cassandra, MongoDB)</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Integrations</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>REST APIs</span></div>
-                        <div class="li"><span class="dot"></span><span>SOAP</span></div>
-                        <div class="li"><span class="dot"></span><span>Kafka / RabbitMQ</span></div>
-                        <div class="li"><span class="dot"></span><span>File & external systems</span></div>
-                    </div>
+                <div class="li">
+                  <span class="dot"></span><span>Hibernate & JPA</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">DevOps / Tooling</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>Docker</span></div>
-                        <div class="li"><span class="dot"></span><span>Git</span></div>
-                        <div class="li"><span class="dot"></span><span>CI/CD basics</span></div>
-                    </div>
+                <div class="li">
+                  <span class="dot"></span><span>Liquibase & Docker</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Observability</div>
-                    <div class="list">
-                        <div class="li"><span class="dot"></span><span>Grafana</span></div>
-                        <div class="li"><span class="dot"></span><span>InfluxDB</span></div>
-                        <div class="li"><span class="dot"></span><span>Logging & monitoring</span></div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Architecture & Integration</div>
+              <div class="list">
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>Design Patterns, SOLID & Clean Code</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>Canonical & Client Models</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>API Design (Swagger / OpenAPI)</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span><span>REST & SOAP</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span><span>Apache Kafka & MQ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">DevOps & Tools</div>
+              <div class="list">
+                <div class="li">
+                  <span class="dot"></span><span>Git & Linux</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span
+                  ><span>Microservices Architecture</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span><span>Grafana & InfluxDB</span>
+                </div>
+                <div class="li">
+                  <span class="dot"></span><span>JUnit 5 & Mockito</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="section" id="skills">
+      <section class="section" id="experience">
         <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Skills</div>
-                <h2 class="h2">Core skills</h2>
-                <p class="muted">Straight to the point: what I can do confidently.</p>
-            </div>
+          <div class="section__head">
+            <div class="eyebrow">Experience</div>
+            <h2 class="h2">Where I've worked</h2>
+            <p class="muted">
+              My commercial experience in building enterprise-scale systems.
+            </p>
+          </div>
 
-            <div class="skillsGrid">
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Angular</div>
-                    <div class="cardText">
-                        Component architecture, reactive forms, RxJS patterns, routing, HTTP, UI consistency.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">RxJS</span>
-                        <span class="pillSmall">Reactive Forms</span>
-                        <span class="pillSmall">Routing</span>
-                        <span class="pillSmall">HTTP</span>
-                    </div>
+          <div class="timeline">
+            <article class="card cardPad lift reveal">
+              <div class="rowTop">
+                <div>
+                  <div class="role">PKO Bank Polski S.A.</div>
+                  <div class="meta">Integration Developer · Banking Sector</div>
                 </div>
+                <div class="badges">
+                  <span class="badge">Java</span>
+                  <span class="badge">Spring Boot</span>
+                  <span class="badge badge--muted">REST / SOAP</span>
+                  <span class="badge badge--muted">Kafka / MQ</span>
+                  <span class="badge badge--muted">React</span>
+                </div>
+              </div>
 
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Java / Spring</div>
-                    <div class="cardText">
-                        Spring Boot services, REST APIs, validation, JPA/Hibernate, transactional logic, versioning.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">Spring Boot</span>
-                        <span class="pillSmall">JPA</span>
-                        <span class="pillSmall">Hibernate</span>
-                        <span class="pillSmall">REST</span>
-                    </div>
+              <div
+                class="cardText"
+                style="font-weight: 600; margin-top: 1.5rem; color: var(--text)"
+              >
+                Business Domain
+              </div>
+              <div class="list" style="margin-top: 8px">
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Integrated internal banking systems using various financial
+                    protocols and structured data formats.</span
+                  >
                 </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Mapped dependencies across a complex ecosystem of
+                    interconnected applications within the bank.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Created an internal tool allowing business analysts to
+                    easily query data on their own.</span
+                  >
+                </div>
+              </div>
 
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Integrations & data formats</div>
-                    <div class="cardText">
-                        Designing and maintaining integrations using REST/SOAP, message queues and structured data formats.
-                        Comfortable working with configuration and schema-driven APIs.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">REST</span>
-                        <span class="pillSmall">SOAP</span>
-                        <span class="pillSmall">Kafka</span>
-                        <span class="pillSmall">RabbitMQ</span>
-                        <span class="pillSmall">JSON</span>
-                        <span class="pillSmall">YAML</span>
-                        <span class="pillSmall">XML</span>
-                        <span class="pillSmall">XSD</span>
-                    </div>
+              <div
+                class="cardText"
+                style="font-weight: 600; margin-top: 1.5rem; color: var(--text)"
+              >
+                Technical Details
+              </div>
+              <div class="list" style="margin-top: 8px">
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Built and deployed microservices using an internal Spring
+                    Boot-based integration framework.</span
+                  >
                 </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Implemented synchronous and asynchronous integrations using
+                    REST, SOAP, MQ, and Apache Kafka.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Developed a React frontend connected to CassandraDB for the
+                    business analysts' tooling.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Monitored service health using Grafana and InfluxDB to
+                    quickly resolve incidents.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Wrote comprehensive unit and integration tests to ensure
+                    the reliability of critical banking integrations.</span
+                  >
+                </div>
+              </div>
+            </article>
 
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Databases</div>
-                    <div class="cardText">
-                        SQL, relational modelling, joins, indexing basics, working with PostgreSQL/MySQL in real apps.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">PostgreSQL</span>
-                        <span class="pillSmall">MySQL</span>
-                        <span class="pillSmall">SQL</span>
-                    </div>
+            <article class="card cardPad lift reveal">
+              <div class="rowTop">
+                <div>
+                  <div class="role">Transition Technologies – Science</div>
+                  <div class="meta">
+                    Full-Stack Developer · Healthcare Sector
+                  </div>
                 </div>
+                <div class="badges">
+                  <span class="badge">Angular</span>
+                  <span class="badge">Java</span>
+                  <span class="badge">Spring Boot</span>
+                  <span class="badge">PostgreSQL</span>
+                  <span class="badge badge--muted">Liquibase</span>
+                  <span class="badge badge--muted">Kafka</span>
+                </div>
+              </div>
 
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Delivery</div>
-                    <div class="cardText">
-                        Git workflow, code reviews, maintaining quality, fixing bugs, shipping features and improvements.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">Git</span>
-                        <span class="pillSmall">Code Review</span>
-                        <span class="pillSmall">Refactoring</span>
-                    </div>
+              <div
+                class="cardText"
+                style="font-weight: 600; margin-top: 1.5rem; color: var(--text)"
+              >
+                Business Domain
+              </div>
+              <div class="list" style="margin-top: 8px">
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Built healthcare applications, including a Biobank
+                    management system and a Patient Portal for clinical
+                    trials.</span
+                  >
                 </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Worked on integrating complex medical databases used by
+                    hospitals and research institutions.</span
+                  >
+                </div>
+              </div>
 
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Secondary</div>
-                    <div class="cardText">
-                        React/Node used before; not primary, but comfortable to learn deeper when needed.
-                    </div>
-                    <div class="pillRow">
-                        <span class="pillSmall">React</span>
-                        <span class="pillSmall">Node.js</span>
-                        <span class="pillSmall">MongoDB</span>
-                    </div>
+              <div
+                class="cardText"
+                style="font-weight: 600; margin-top: 1.5rem; color: var(--text)"
+              >
+                Technical Details
+              </div>
+              <div class="list" style="margin-top: 8px">
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Developed full-stack web apps using Angular and Spring
+                    Boot, backed by PostgreSQL.</span
+                  >
                 </div>
-            </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Used Liquibase for safe and version-controlled database
+                    migrations.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Designed communication between modules using REST, SOAP,
+                    MQ, and Apache Kafka.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Optimized Hibernate entities and SQL queries to improve
+                    performance with large medical datasets.</span
+                  >
+                </div>
+                <div class="li">
+                  <span class="dot"></span>
+                  <span
+                    >Wrote unit and integration tests using JUnit 5 and
+                    Mockito.</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="section" id="experience">
+      <section class="section" id="education">
         <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Experience</div>
-                <h2 class="h2">Professional experience — 4+ years</h2>
-                <p class="muted">
-                    Commercial experience in healthcare and banking systems, covering full-stack development,
-                    system architecture and enterprise-scale integrations.
-                </p>
-            </div>
+          <div class="section__head">
+            <div class="eyebrow">Education & Certifications</div>
+            <h2 class="h2">My background</h2>
+            <p class="muted">
+              Academic background and current professional goals.
+            </p>
+          </div>
 
-            <div class="timeline">
-                <!-- TTS -->
-                <article class="card cardPad lift reveal">
-                    <div class="rowTop">
-                        <div>
-                            <div class="role">Transition Technologies – Science</div>
-                            <div class="meta">Full-Stack Developer · Healthcare & Clinical Research</div>
-                        </div>
-                        <div class="badges">
-                            <span class="badge">Angular</span>
-                            <span class="badge">Java</span>
-                            <span class="badge">Spring Boot</span>
-                            <span class="badge">PostgreSQL</span>
-                            <span class="badge badge--muted">Liquibase</span>
-                            <span class="badge badge--muted">REST</span>
-                            <span class="badge badge--muted">SOAP</span>
-                            <span class="badge badge--muted">Kafka / MQ</span>
-                        </div>
-                    </div>
-
-                    <div class="cardText">
-                        End-to-end development of full-stack applications for hospitals, biobanks, laboratories
-                        and clinical trial centers. Responsible for architecture, implementation and production delivery.
-                    </div>
-
-                    <div class="list" style="margin-top: 14px">
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Designed and developed full-stack web applications using Angular (frontend) and Spring Boot
-              with modern Java versions (backend), integrated with PostgreSQL databases
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Planned and implemented database schemas and migrations using Liquibase,
-              ensuring versioned and safe database evolution
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Took full responsibility for application architecture — from database design,
-              through backend services and frontend UI, to deployment on production environments
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Designed and delivered systems for biobanks, patient diaries and clinical trial management,
-              often integrating complex medical system databases
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Implemented inter-module and external integrations using REST, SOAP, message queues (MQ)
-              and Apache Kafka
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Contributed to internal frontend and backend libraries reused across multiple projects,
-              improving consistency and development speed
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Participated in code reviews and helped define coding standards and best practices
-              to ensure maintainability and code quality
-            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PKO -->
-                <article class="card cardPad lift reveal">
-                    <div class="rowTop">
-                        <div>
-                            <div class="role">PKO Bank Polski S.A.</div>
-                            <div class="meta">Software Engineer · Banking & Enterprise Integration</div>
-                        </div>
-                        <div class="badges">
-                            <span class="badge">Java</span>
-                            <span class="badge">Microservices</span>
-                            <span class="badge">Integration</span>
-                            <span class="badge badge--muted">REST</span>
-                            <span class="badge badge--muted">SOAP</span>
-                            <span class="badge badge--muted">MQ</span>
-                            <span class="badge badge--muted">Kafka</span>
-                            <span class="badge badge--muted">ESB</span>
-                        </div>
-                    </div>
-
-                    <div class="cardText">
-                        Backend and integration development in a large-scale banking environment,
-                        focused on reliable communication between numerous internal systems.
-                    </div>
-
-                    <div class="list" style="margin-top: 14px">
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Integrated a wide range of internal banking systems by designing and implementing
-              communication flows tailored to each system’s protocols and data formats
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Built scalable, lightweight Java microservices using an internal Spring Boot–based
-              integration framework, enabling horizontal scalability
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Worked extensively with REST, SOAP, message queues (MQ) and Apache Kafka
-              in asynchronous and synchronous integration scenarios
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Maintained and navigated a complex ecosystem of interconnected systems
-              and multiple environments across the bank’s IT landscape
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Monitored services and environments using Grafana and InfluxDB,
-              quickly identifying and resolving incidents to ensure high availability
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Developed an internal React-based tool for business analysts to work
-              with Cassandra-stored data, demonstrating flexibility across technologies
-            </span>
-                        </div>
-                        <div class="li">
-                            <span class="dot"></span>
-                            <span>
-              Thoroughly tested all delivered solutions, understanding the critical importance
-              of stability and reliability in banking systems
-            </span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="section" id="projects">
-        <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Projects</div>
-                <h2 class="h2">Older personal projects</h2>
-                <p class="muted">These projects were built earlier. They’re here to show breadth and learning path.</p>
-            </div>
-
-            <div class="projects">
-                <article class="project lift reveal">
-                    <div class="project__media">
-                        <img src="./images/etutor.webp" alt="E-Tutor platform preview" loading="lazy" />
-                        <div class="project__overlay"></div>
-                        <div class="project__label">Older</div>
-                    </div>
-                    <div class="project__body">
-                        <div class="project__name">E-Tutor Platform</div>
-                        <div class="project__desc">Ads, filtering, reviews, responsive UI.</div>
-                        <div class="pillRow">
-                            <span class="pillSmall">Frontend</span>
-                            <span class="pillSmall">Filtering</span>
-                            <span class="pillSmall">Responsive</span>
-                        </div>
-                        <div class="project__actions">
-                            <a class="pill pill--ghost" href="https://github.com/matrasj" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project lift reveal">
-                    <div class="project__media">
-                        <img src="./images/ecommerce.jpeg" alt="MMA e-commerce preview" loading="lazy" />
-                        <div class="project__overlay"></div>
-                        <div class="project__label">Older</div>
-                    </div>
-                    <div class="project__body">
-                        <div class="project__name">MMA E-commerce</div>
-                        <div class="project__desc">Pagination, orders, validation, Stripe payments.</div>
-                        <div class="pillRow">
-                            <span class="pillSmall">Payments</span>
-                            <span class="pillSmall">Forms</span>
-                            <span class="pillSmall">Pagination</span>
-                        </div>
-                        <div class="project__actions">
-                            <a class="pill pill--ghost" href="https://github.com/matrasj" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project lift reveal">
-                    <div class="project__media">
-                        <img src="./images/quiz.jpg" alt="Quiz platform preview" loading="lazy" />
-                        <div class="project__overlay"></div>
-                        <div class="project__label">Older</div>
-                    </div>
-                    <div class="project__body">
-                        <div class="project__name">Quiz Platform</div>
-                        <div class="project__desc">Role-based platform: Student / Teacher / Admin.</div>
-                        <div class="pillRow">
-                            <span class="pillSmall">Roles</span>
-                            <span class="pillSmall">Auth</span>
-                            <span class="pillSmall">Learning</span>
-                        </div>
-                        <div class="project__actions">
-                            <a class="pill pill--ghost" href="https://github.com/matrasj" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project lift reveal">
-                    <div class="project__media">
-                        <img src="./images/reddit.png" alt="Reddit clone preview" loading="lazy" />
-                        <div class="project__overlay"></div>
-                        <div class="project__label">Older</div>
-                    </div>
-                    <div class="project__body">
-                        <div class="project__name">Reddit Clone</div>
-                        <div class="project__desc">Posting, comments, voting, pagination, S3 storage.</div>
-                        <div class="pillRow">
-                            <span class="pillSmall">SPA</span>
-                            <span class="pillSmall">Pagination</span>
-                            <span class="pillSmall">S3</span>
-                        </div>
-                        <div class="project__actions">
-                            <a class="pill pill--ghost" href="https://github.com/matrasj" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="contact">
-        <div class="wrap">
-            <div class="section__head">
-                <div class="eyebrow">Contact</div>
-                <h2 class="h2">Contact</h2>
-                <p class="muted">Best channel: LinkedIn. You can also copy a ready message below.</p>
-            </div>
-
-            <div class="contactGrid">
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Links</div>
-                    <div class="links">
-                        <a class="link" href="https://github.com/matrasj" target="_blank" rel="noreferrer">
-                            <span class="link__k">GitHub</span><span class="link__v">matrasj</span>
-                        </a>
-                        <a class="link" href="https://www.linkedin.com/in/jakub-matras-b07684229/" target="_blank" rel="noreferrer">
-                            <span class="link__k">LinkedIn</span><span class="link__v">jakub-matras</span>
-                        </a>
-                        <a class="link" href="./files/CV.pdf" download="Jakub_Matras_CV">
-                            <span class="link__k">CV</span><span class="link__v">PDF</span>
-                        </a>
-                    </div>
+          <div class="skillsGrid">
+            <div class="card cardPad lift reveal">
+              <div class="rowTop" style="margin-bottom: 12px">
+                <div class="cardTitle">Lublin University of Technology</div>
+                <div class="badges">
+                  <span class="badge">Completed</span>
                 </div>
-
-                <div class="card cardPad lift reveal">
-                    <div class="cardTitle">Copy a message</div>
-                    <form class="form" id="contactForm">
-                        <label class="field">
-                            <span>Name</span>
-                            <input type="text" name="name" placeholder="Your name" required />
-                        </label>
-                        <label class="field">
-                            <span>Email</span>
-                            <input type="email" name="email" placeholder="name@company.com" required />
-                        </label>
-                        <label class="field">
-                            <span>Message</span>
-                            <textarea name="message" rows="4" placeholder="Hi Jakub, we’d like to talk about a Full-Stack (Angular + Java) role..." required></textarea>
-                        </label>
-                        <div class="formRow">
-                            <button class="pill pill--primary" type="submit">Copy to clipboard</button>
-                            <div class="tiny muted" id="formHint">Paste into LinkedIn/email.</div>
-                        </div>
-                    </form>
-                </div>
+              </div>
+              <div class="cardText" style="font-weight: 500">
+                Bachelor of Engineering (B.Eng.)
+              </div>
+              <div class="cardText" style="margin-top: 4px">
+                Field of Study: Computer Science
+              </div>
+              <div class="muted" style="margin-top: 12px; font-size: 0.9rem">
+                Graduated: March 2026
+              </div>
             </div>
 
-            <footer class="footer">
-                <span>© <span id="year"></span> Jakub Matras</span>
-                <span class="sep">•</span>
-                <span>Full-Stack (Angular + Java/Spring)</span>
-            </footer>
+            <div class="card cardPad lift reveal">
+              <div class="rowTop" style="margin-bottom: 12px">
+                <div class="cardTitle">Oracle Certification</div>
+                <div class="badges">
+                  <span class="badge badge--muted">In Progress</span>
+                </div>
+              </div>
+              <div class="cardText" style="font-weight: 500">
+                OCP Java SE 25 Developer
+              </div>
+              <div class="cardText" style="margin-top: 4px">
+                Oracle Certified Professional
+              </div>
+              <div class="muted" style="margin-top: 12px; font-size: 0.9rem">
+                Status: Currently preparing for the exam
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-</main>
-</body>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="wrap">
+          <div class="section__head">
+            <div class="eyebrow">Projects</div>
+            <h2 class="h2">Older personal projects</h2>
+            <p class="muted">
+              These projects were built earlier to learn new concepts and
+              frameworks.
+            </p>
+          </div>
+
+          <div class="projects">
+            <a
+              href="https://github.com/matrasj/E-Tutor-FrontEnd"
+              target="_blank"
+              rel="noreferrer"
+              class="project lift reveal"
+              style="display: block"
+            >
+              <div class="project__media">
+                <img
+                  src="./images/etutor.webp"
+                  alt="E-Tutor platform preview"
+                  loading="lazy"
+                />
+                <div class="project__overlay"></div>
+                <div class="project__label">Older</div>
+              </div>
+              <div class="project__body">
+                <div class="project__name">E-Tutor Platform</div>
+                <div class="project__desc">
+                  Ads, filtering, reviews, responsive UI.
+                </div>
+                <div class="pillRow">
+                  <span class="pillSmall">Frontend</span>
+                  <span class="pillSmall">Filtering</span>
+                  <span class="pillSmall">Responsive</span>
+                </div>
+                <div class="project__actions">
+                  <span class="pill pill--ghost">GitHub</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/matrasj/ECommerce-MMA-shop-Angular-FrontEnd"
+              target="_blank"
+              rel="noreferrer"
+              class="project lift reveal"
+              style="display: block"
+            >
+              <div class="project__media">
+                <img
+                  src="./images/ecommerce.jpeg"
+                  alt="MMA e-commerce preview"
+                  loading="lazy"
+                />
+                <div class="project__overlay"></div>
+                <div class="project__label">Older</div>
+              </div>
+              <div class="project__body">
+                <div class="project__name">MMA E-commerce</div>
+                <div class="project__desc">
+                  Pagination, orders, validation, Stripe payments.
+                </div>
+                <div class="pillRow">
+                  <span class="pillSmall">Payments</span>
+                  <span class="pillSmall">Forms</span>
+                  <span class="pillSmall">Pagination</span>
+                </div>
+                <div class="project__actions">
+                  <span class="pill pill--ghost">GitHub</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/matrasj/QuizQubFrontend"
+              target="_blank"
+              rel="noreferrer"
+              class="project lift reveal"
+              style="display: block"
+            >
+              <div class="project__media">
+                <img
+                  src="./images/quiz.jpg"
+                  alt="Quiz platform preview"
+                  loading="lazy"
+                />
+                <div class="project__overlay"></div>
+                <div class="project__label">Older</div>
+              </div>
+              <div class="project__body">
+                <div class="project__name">Quiz Platform</div>
+                <div class="project__desc">
+                  Role-based platform: Student / Teacher / Admin.
+                </div>
+                <div class="pillRow">
+                  <span class="pillSmall">Roles</span>
+                  <span class="pillSmall">Auth</span>
+                  <span class="pillSmall">Learning</span>
+                </div>
+                <div class="project__actions">
+                  <span class="pill pill--ghost">GitHub</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/matrasj/Reddit-clone-frontend"
+              target="_blank"
+              rel="noreferrer"
+              class="project lift reveal"
+              style="display: block"
+            >
+              <div class="project__media">
+                <img
+                  src="./images/reddit.png"
+                  alt="Reddit clone preview"
+                  loading="lazy"
+                />
+                <div class="project__overlay"></div>
+                <div class="project__label">Older</div>
+              </div>
+              <div class="project__body">
+                <div class="project__name">Reddit Clone</div>
+                <div class="project__desc">
+                  Posting, comments, voting, pagination, S3 storage.
+                </div>
+                <div class="pillRow">
+                  <span class="pillSmall">SPA</span>
+                  <span class="pillSmall">Pagination</span>
+                  <span class="pillSmall">S3</span>
+                </div>
+                <div class="project__actions">
+                  <span class="pill pill--ghost">GitHub</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap">
+          <div class="section__head">
+            <div class="eyebrow">Contact</div>
+            <h2 class="h2">Get in touch</h2>
+            <p class="muted">The best way to reach me is through LinkedIn.</p>
+          </div>
+
+          <div class="contactGrid">
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Links</div>
+              <div class="links">
+                <a
+                  class="link"
+                  href="https://github.com/matrasj"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="link__k">GitHub</span
+                  ><span class="link__v">matrasj</span>
+                </a>
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/jakub-matras-b07684229/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="link__k">LinkedIn</span
+                  ><span class="link__v">jakub-matras</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card cardPad lift reveal">
+              <div class="cardTitle">Copy a message</div>
+              <form class="form" id="contactForm">
+                <label class="field">
+                  <span>Name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="name@company.com"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Hi Jakub, we’d like to talk about a Full-Stack role..."
+                    required
+                  ></textarea>
+                </label>
+                <div class="formRow">
+                  <button class="pill pill--primary" type="submit">
+                    Copy to clipboard
+                  </button>
+                  <div class="tiny muted" id="formHint">
+                    Paste into LinkedIn or email.
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <span>© <span id="year"></span> Jakub Matras</span>
+            <span class="sep">•</span>
+            <span>Software Engineer</span>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
